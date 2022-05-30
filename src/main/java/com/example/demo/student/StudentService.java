@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
-@Service // annotation // == @Component (both r exactly similar)
+@Service // annotation (Spring bean) // more semantics & high understandability // == @Component (both r exactly similar)
 public class StudentService {
 
     public List<Student> getStudents() {

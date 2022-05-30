@@ -15,7 +15,7 @@ public class StudentController {
     @Autowired  // dependency injection
     public StudentController(StudentService studentService) {
         // this.studentService = new StudentService();  // Work but X good, so use dependency injection
-         this.studentService = studentService;  // dependency injection
+         this.studentService = studentService;  // dependency injection: magically instantiate for us & inject into constructor -> ALl work
     }
 
     @GetMapping
