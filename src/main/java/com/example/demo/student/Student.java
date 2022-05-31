@@ -18,7 +18,7 @@ public class Student {
             generator = "student_sequence"
     )
 
-    // Variables
+    // Variables1
     private Long id;
     private String name;
     private String email;
@@ -99,7 +99,7 @@ public class Student {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", date=" + dob +
+                ", dob=" + dob +
                 ", age=" + age +
                 '}';
     }
