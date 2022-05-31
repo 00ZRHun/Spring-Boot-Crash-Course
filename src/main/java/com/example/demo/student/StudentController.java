@@ -24,7 +24,7 @@ public class StudentController {
     @PostMapping
     public void registerNewStudent(@RequestBody Student student) {
         studentService.addNewStudent(student);
-        //
+
         /*
         POST http://localhost:8080/api/v1/student
         Content-Type: application/json
