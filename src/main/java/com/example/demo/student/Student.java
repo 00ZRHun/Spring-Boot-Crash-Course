@@ -1,7 +1,8 @@
 package com.example.demo.student;
 
-import javax.persistence.*;
+import javax.persistence.*;  // chg from hibernate to other providers, & everythg will work.
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity  // for hibernate
 @Table   // for tbl in db
@@ -22,6 +23,8 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
+
+    @Transient  // X make it as col in table
     private Integer age;
 
     // Constructors
@@ -31,23 +34,19 @@ public class Student {
     public Student(Long id,  // Select all
                    String name,
                    String email,
-                   LocalDate dob,
-                   Integer age) {
+                   LocalDate dob) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     public Student(String name,  // without id
                    String email,
-                   LocalDate dob,
-                   Integer age) {
+                   LocalDate dob) {
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     // Getters and Setters
@@ -85,7 +84,7 @@ public class Student {
     }
 
     public Integer getAge() {
-        return age;
+        return Period.between(this.dob, LocalDate.now()).getYears();
     }
 
     public void setAge(Integer age) {
