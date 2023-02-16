@@ -12,7 +12,7 @@ import static java.time.Month.JANUARY;
 @Configuration
 public class StudentConfig {
 
-    @Bean
+    /*@Bean
     CommandLineRunner commandLineRunner (
             StudentRepository studentRepository) {
         return arg -> {
@@ -32,7 +32,7 @@ public class StudentConfig {
                     List.of(mariam, alex)
             );
         };
-    }
+    }*/
 //    args
 //    [{"id":1,"name":"Mariam","email":"mariam.jamal@gmail.com","dob":"2000-01-05","age":21},{"id":1,"name":"Hun","email":"hunzurong@gmail.com","dob":"2000-01-01","age":21}]
 //    args = [
