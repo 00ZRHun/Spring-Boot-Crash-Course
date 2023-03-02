@@ -1,4 +1,4 @@
-package com.example.demo.bjson;
+package com.example.demo.jsonb;
 
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import lombok.AllArgsConstructor;

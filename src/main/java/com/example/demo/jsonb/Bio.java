@@ -1,4 +1,4 @@
-package com.example.demo.bjson;
+package com.example.demo.jsonb;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

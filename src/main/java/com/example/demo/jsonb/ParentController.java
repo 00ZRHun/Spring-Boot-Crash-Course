@@ -1,4 +1,4 @@
-package com.example.demo.bjson;
+package com.example.demo.jsonb;
 
 import org.hibernate.annotations.Any;
 import org.springframework.web.bind.annotation.*;
